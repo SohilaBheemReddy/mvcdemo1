@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "SendObjects3";
+}
+
+    <h2>
+        @foreach (var item in ViewData["abc"] as IList<mvcdemo1.Models.Emp>)
+        {
+            @item.Empno
+            @item.Ename
+            @item.Salary
+        }
+    </h2>
+
